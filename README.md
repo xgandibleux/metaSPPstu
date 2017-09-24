@@ -5,5 +5,6 @@ Elements de soutien à la mise en place au codage en Julia des devoirs maison à
 - `loadSPP.jl` : lecture d'une instance au format OR-library
 - `setSPP.jl` : construction d'un modèle JuMP de SPP
 
-Exemple d'une résolution :
+Exemple d'utilisation (`main.jl`) :
+- chargement d'une instance de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
