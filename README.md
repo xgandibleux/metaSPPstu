@@ -6,5 +6,5 @@ Elements de soutien à la mise en place au codage en Julia des devoirs maison à
 - `setSPP.jl` : construction d'un modèle JuMP de SPP
 
 Exemple d'utilisation (`main.jl`) :
-- chargement de l'instance pb_100rnd0100.dat de SPP
+- chargement de l'instance `pb_100rnd0100.dat` de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
