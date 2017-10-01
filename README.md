@@ -4,8 +4,9 @@ Elements de soutien à la mise en place au codage en Julia des devoirs maison à
 
 - `loadSPP.jl` : lecture d'une instance au format OR-library
 - `setSPP.jl` : construction d'un modèle JuMP de SPP
+- `getfname.jl`: collecte les noms de fichiers non cachés présents dans un répertoire donné
 
-Le répertoire `Data`contient une sélection d'instances numériques de SPP au format OR-library :
+Le répertoire `Data` contient une sélection d'instances numériques de SPP au format OR-library :
 - didactic.dat
 
 Exemple d'utilisation (`main.jl`) :
