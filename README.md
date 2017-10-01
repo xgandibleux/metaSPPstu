@@ -14,7 +14,7 @@ Le répertoire `Data` contient une sélection d'instances numériques de SPP au 
 - pb_1000rnd0100.dat
 - pb_2000rnd0100.dat
 
-Exemple d'utilisation (`main.jl`) avec un chemin d'accès correspondant à une configuration standard sur macOS :
+Exemple d'utilisation (`main.jl`) avec chemins d'accès correspondant à une configuration standard sur macOS :
 - chargement de l'instance `didactic.dat` de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
 - collecte des noms d'instances présentes dans le répertoire `Data`
