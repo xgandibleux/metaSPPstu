@@ -1,4 +1,5 @@
 # =========================================================================== #
+
 # Using the following packages
 using JuMP, GLPKMathProgInterface
 
@@ -6,8 +7,9 @@ include("loadSPP.jl")
 include("setSPP.jl")
 
 # =========================================================================== #
+
 # Setting the data
-fname = "Data/pb_100rnd0100.dat"
+fname = "Desktop/Data/didactic.dat"  # path for a standard config on macOS
 cost, matrix = loadSPP(fname)
 
 # Proceeding to the optimization
@@ -18,3 +20,9 @@ println("Solving..."); solve(ip)
 # Displaying the results
 println("z  = ", getobjectivevalue(ip))
 print("x  = "); println(getvalue(ip_x))
+
+# =========================================================================== #
+
+# Collecting the names of instances to solve
+target = "Desktop/Data"            # path for a standard config on macOS
+fnames = getfname(target)
