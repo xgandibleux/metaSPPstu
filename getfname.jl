@@ -1,3 +1,6 @@
+# --------------------------------------------------------------------------- #
+# 
+
 function getfname(target)
     # target : string := chemin + nom du repertoire ou se trouve les instances
 
