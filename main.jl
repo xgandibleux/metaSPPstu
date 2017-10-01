@@ -7,7 +7,7 @@ include("setSPP.jl")
 
 # =========================================================================== #
 # Setting the data
-fname = "pb_100rnd0100.dat"
+fname = "Data/pb_100rnd0100.dat"
 cost, matrix = loadSPP(fname)
 
 # Proceeding to the optimization
