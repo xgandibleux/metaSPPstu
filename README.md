@@ -8,8 +8,13 @@ Elements de soutien à la mise en place au codage en Julia des devoirs maison à
 
 Le répertoire `Data` contient une sélection d'instances numériques de SPP au format OR-library :
 - didactic.dat
+- pb_100rnd0100.dat 
+- pb_200rnd0100.dat 
+- pb_500rnd0100.dat
+- pb_1000rnd0100.dat
+- pb_2000rnd0100.dat
 
-Exemple d'utilisation (`main.jl`) :
+Exemple d'utilisation (`main.jl`) avec un chemin d'accès correspondant à une configuration standard sur macOS :
 - chargement de l'instance `didactic.dat` de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
 - collecte des noms d'instances présentes dans le répertoire `Data`
