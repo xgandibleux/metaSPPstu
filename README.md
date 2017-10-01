@@ -10,5 +10,6 @@ Le répertoire `Data` contient une sélection d'instances numériques de SPP au 
 - didactic.dat
 
 Exemple d'utilisation (`main.jl`) :
-- chargement de l'instance `pb_100rnd0100.dat` de SPP
+- chargement de l'instance `didactic.dat` de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
+- collecte des noms d'instances présentes dans le répertoire `Data`
