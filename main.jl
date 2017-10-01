@@ -5,6 +5,7 @@ using JuMP, GLPKMathProgInterface
 
 include("loadSPP.jl")
 include("setSPP.jl")
+include("getfname.jl")
 
 # =========================================================================== #
 
