@@ -22,5 +22,5 @@ Exemple d'utilisation (`main.jl`) avec chemins d'accès correspondant à une con
 
 Exemple d'utilisation (`experiment.jl`) du protocole d'expérimentation sur un GRASP-SPP simulé :
 
-![terminal](../doc/terminal.jpg)
+![terminal](meta2017/doc/terminal.jpg)
 
