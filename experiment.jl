@@ -39,7 +39,6 @@ function plotAnalyseGrasp(iname, x, zmoy, zmin, zmax)
     title("GRASP-SPP | zMin/zMoy/zMax | "iname)
     xlabel("Itérations (pour nbRunGrasp)")
     ylabel("valeurs de z(x)")
-    # xlim(0, x[end]+ (x[end]-x[end-1]))
     ylim(0, zmax[end]+2)
 
     nPoint = length(x)
@@ -63,13 +62,13 @@ function plotCPUt(allfinstance, tmoy)
 end
 
 
-#function experimentationNumerique()
+#function experimentationNumerique() --------------------------
 
 allfinstance      =  ["didactic.txt", "fn2.txt", "fn3.txt", "fnA.txt", "fnX.txt"]
 nbInstances       =  length(allfinstance)
-nbRunGrasp        =  30       # nombre de fois que la resolution GRASP est repetee
+nbRunGrasp        =  30   # nombre de fois que la resolution GRASP est repetee
 nbIterationGrasp  =  200  # nombre d'iteration que compte une resolution GRASP
-nbDivisionRun     =  10       # nombre de division que compte une resolution GRASP
+nbDivisionRun     =  10   # nombre de division que compte une resolution GRASP
 
 zinit = zeros(Int64, nbIterationGrasp) # zero
 zls   = zeros(Int64, nbIterationGrasp) # zero
@@ -94,14 +93,14 @@ println("  nbDivisionRun     = ", nbDivisionRun)
 println(" ")
 cpt = 0
 
-#run non comptabilise (afin de produire le code compile)
+# run non comptabilise (afin de produire le code compile)
 zinit, zls, zbest = graspSPP(allfinstance[1], 0.5, 1)
 
 for instance = 1:nbInstances
+    # les instances sont traitees separement
+    
     print("  ",allfinstance[instance]," : ")
-
     for runGrasp = 1:nbRunGrasp
-
         # une instance sera resolue nbrungrasp fois
 
         tic() # demarre le compteur de temps
@@ -112,8 +111,6 @@ for instance = 1:nbInstances
 
         # mise a jour des resultats collectes
         for division=1:nbDivisionRun
-#            i = convert(Int64, ceil(nbIterationGrasp / nbDivisionRun * division))
-            #println("instance=", instance, "rungrasp=", runGrasp, "i=",i)
             zmax[instance,division] = max(zbest[x[division]], zmax[instance,division])
             zmin[instance,division] = min(zbest[x[division]], zmin[instance,division])
             zmoy[instance,division] =  zbest[x[division]] + zmoy[instance,division]
@@ -129,12 +126,11 @@ for instance = 1:nbInstances
 
 end #instance
 
-
 #Pkg.add("PyPlot") # Mandatory before the first use of this package
 println(" ");println("  Graphiques de synthese")
 using PyPlot
-
 instancenb = 1
 plotRunGrasp(allfinstance[instancenb], zinit, zls, zbest)
 plotAnalyseGrasp(allfinstance[instancenb], x, zmoy[instancenb,:], zmin[instancenb,:], zmax[instancenb,:] )
 plotCPUt(allfinstance, tmoy)
+
