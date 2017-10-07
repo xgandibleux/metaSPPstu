@@ -1,3 +1,6 @@
+# --------------------------------------------------------------------------- #
+# Perform a numerical experiment (with a fake version of GRASP-SPP)
+
 function graspSPP(fname, alpha, nbIterationGrasp)
 
     zconstruction = zeros(Int64,nbIterationGrasp)
