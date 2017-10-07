@@ -21,3 +21,6 @@ Exemple d'utilisation (`main.jl`) avec chemins d'accès correspondant à une con
 - collecte des noms d'instances présentes dans le répertoire `Data`
 
 Exemple d'utilisation (`experiment.jl`) du protocole d'expérimentation sur un GRASP-SPP simulé :
+
+![terminal](../doc/terminal.jpg)
+
