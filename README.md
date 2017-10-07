@@ -7,6 +7,8 @@ Elements de soutien à la mise en place au codage en Julia des devoirs maison à
 - `getfname.jl`: collecte les noms de fichiers non cachés présents dans un répertoire donné (01/10/2017)
 - `experiment.jl`: protocole pour mener une expérimentation numérique avec sorties graphiques (07/10/2017)
 
+------
+
 Le répertoire `Data` contient une sélection d'instances numériques de SPP au format OR-library : (01/10/2017)
 - didactic.dat
 - pb_100rnd0100.dat 
@@ -15,10 +17,14 @@ Le répertoire `Data` contient une sélection d'instances numériques de SPP au 
 - pb_1000rnd0100.dat
 - pb_2000rnd0100.dat
 
+------
+
 Exemple d'utilisation (`main.jl`) avec chemins d'accès correspondant à une configuration standard sur macOS (24/09/2017 - Rev 01/10/2017) :
 - chargement de l'instance `didactic.dat` de SPP
 - résolution exacte d'une instance de SPP à l'aide du solveur MIP de GLPK
 - collecte des noms d'instances présentes dans le répertoire `Data`
+
+------
 
 Exemple d'utilisation (`experiment.jl`) du protocole d'expérimentation sur un GRASP-SPP simulé :
 
