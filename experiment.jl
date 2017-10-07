@@ -1,5 +1,3 @@
-
-
 function graspSPP(fname, alpha, nbIterationGrasp)
 
     zconstruction = zeros(Int64,nbIterationGrasp)
