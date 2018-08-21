@@ -1,6 +1,6 @@
 # Métaheuristiques pour le Set Packing Problem
 
-Elements de soutien à la mise en place au codage en Julia des devoirs maison à réaliser dans le cadre du distanciel du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)", année 2018-2019.
+Elements de soutien à la mise en place au codage en Julia v0.6.4 et antécédants des devoirs maison à réaliser dans le cadre du distanciel du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)", année 2018-2019.
 
 - `loadSPP.jl` : lecture d'une instance au format OR-library
 - `setSPP.jl` : construction d'un modèle JuMP de SPP
