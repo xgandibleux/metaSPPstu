@@ -1,4 +1,7 @@
-# Métaheuristiques pour le Set Packing Problem
+# metaSPP: metaheuristics for the Set Packing Problem
+Implementation in Julia (compliant Julia v0.6.4) of well-known heuristics and metaheuristics applied on the Set Packing Problem (SPP) for pedagogical purposes.
+
+Goal/Objectif:
 
 Elements de soutien à la mise en place au codage en Julia (v0.6.4 et antécédants) des devoirs maison à réaliser dans le cadre du distanciel du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)", année 2018-2019.
 
