@@ -1,5 +1,5 @@
 # solveSPP: solving the Set Packing Problem
-Implementation in Julia (compliant Julia v0.6.4) of well-known heuristics and metaheuristics applied on the Set Packing Problem (SPP) for pedagogical purposes.
+Implementation in Julia (compliant Julia v0.6.4) of well-known optimization algorithms applied on the Set Packing Problem (SPP) for pedagogical purposes.
 
 ------
 
