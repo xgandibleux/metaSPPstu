@@ -1,14 +1,14 @@
 # solveSPP: solving the Set Packing Problem
-Implementation in Julia (compliant Julia v0.6.4) of well-known optimization algorithms applied on the Set Packing Problem (SPP) for pedagogical purposes.
+Implementation in Julia (compliant Julia v1.x) of well-known optimization algorithms applied on the Set Packing Problem (SPP) for pedagogical purposes.
 
 ------
 
 Objectif:
 
-Elements de soutien à la mise en place au codage en Julia (v0.6.4 et antécédants) des devoirs maison à réaliser dans le cadre du distanciel du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)", année 2018-2019.
+Elements de soutien à la mise en place au codage en Julia v1.x des devoirs maison à réaliser dans le cadre du distanciel du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)", année 2019-2020.
 
 - `loadSPP.jl` : lecture d'une instance au format OR-library
-- `setSPP.jl` : construction d'un modèle JuMP de SPP
+- `setSPP.jl` : construction d'un modèle JuMP (v0.20) de SPP
 - `getfname.jl`: collecte les noms de fichiers non cachés présents dans un répertoire donné
 - `experiment.jl`: protocole pour mener une expérimentation numérique avec sorties graphiques
 
