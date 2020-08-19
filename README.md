@@ -1,4 +1,4 @@
-# solveSPP: solving the Set Packing Problem
+# metaSPPstu: solving the Set Packing Problem (student version)
 Implementation in Julia (compliant Julia v1.x) of tools related to the Set Packing Problem (SPP) for pedagogical purposes.
 
 ------
