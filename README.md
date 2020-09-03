@@ -1,6 +1,8 @@
 # metaSPPstu: solving the Set Packing Problem (student version)
 Implementation in Julia (compliant Julia v1.x) of tools related to the Set Packing Problem (SPP) for pedagogical purposes.
 
+This implementation is the base of an exercice of the course "metaheuristics".
+
 ------
 
 Fonctionnalités des codes :
