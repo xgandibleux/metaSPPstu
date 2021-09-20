@@ -42,3 +42,10 @@ Exemple d'utilisation (`experiment.jl`) du protocole d'expérimentation sur un G
 ![analyse](https://github.com/xgandibleux/meta2017/blob/master/doc/bilan_tous_runs.jpg)
 
 ![cput](https://github.com/xgandibleux/meta2017/blob/master/doc/bilan_CPUt_tous_runs.jpg)
+
+
+------
+
+Environnement de test pour les devoirs maison
+
+- note sur les [règles à respecter]!(https://github.com/xgandibleux/meta2017/blob/master/doc/Regles.pdf) 
