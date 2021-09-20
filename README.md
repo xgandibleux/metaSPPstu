@@ -48,4 +48,4 @@ Exemple d'utilisation (`experiment.jl`) du protocole d'expérimentation sur un G
 
 Environnement de test pour les devoirs maison
 
-- note sur les [règles à respecter]!(https://github.com/xgandibleux/meta2017/blob/master/doc/Regles.pdf) 
+- note sur les [règles à respecter](https://github.com/xgandibleux/meta2017/blob/master/doc/Regles.pdf) 
