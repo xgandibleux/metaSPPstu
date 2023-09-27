@@ -21,12 +21,14 @@ C, A = loadSPP(fname)
 # Solving a SPP instance with GLPK
 println("\nSolving...")
 solverSelected = GLPK.Optimizer
-ip, ip_x = setSPP(solverSelected, C, A)
-optimize!(ip)
+spp = setSPP(C, A)
+
+set_optimizer(spp, solverSelected)
+optimize!(spp)
 
 # Displaying the results
-println("z = ", objective_value(ip))
-print("x = "); println(value.(ip_x))
+println("z = ", objective_value(spp))
+print("x = "); println(value.(spp[:x]))
 
 # =========================================================================== #
 
