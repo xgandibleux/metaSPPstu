@@ -10,7 +10,7 @@ Fonctionnalités des codes :
 Eléments de soutien à l'implémentation en Julia v1.x des devoirs maison à réaliser dans le cadre du cours "métaheuristiques" en master 1 informatique". Révision pour l'année académique 2023-2024.
 
 - `loadSPP.jl` : lecture d'une instance de SPP au format OR-library
-- `setSPP.jl` : construction d'un modèle JuMP (v0.20) de SPP
+- `setSPP.jl` : construction d'un modèle JuMP de SPP
 - `getfname.jl`: collecte les noms de fichiers non cachés présents dans un répertoire donné
 - `experiment.jl`: protocole pour mener une expérimentation numérique avec sorties graphiques
 
