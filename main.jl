@@ -11,21 +11,28 @@ include("getfname.jl")
 
 # =========================================================================== #
 
-# Setting the data
-fname = "Desktop/solveSPP/Data/didactic.dat"  # path for a standard config on macOS
-cost, matrix = loadSPP(fname)
+# Loading a SPP instance
+println("\nLoading...")
+fname = "Data/didactic.dat"
+C, A = loadSPP(fname)
+@show C
+@show A
 
-# Proceeding to the optimization
+# Solving a SPP instance with GLPK
+println("\nSolving...")
 solverSelected = GLPK.Optimizer
-ip, ip_x = setSPP(solverSelected, cost, matrix)
-println("Solving..."); optimize!(ip)
+ip, ip_x = setSPP(solverSelected, C, A)
+optimize!(ip)
 
 # Displaying the results
-println("z  = ", objective_value(ip))
-print("x  = "); println(value.(ip_x))
+println("z = ", objective_value(ip))
+print("x = "); println(value.(ip_x))
 
 # =========================================================================== #
 
 # Collecting the names of instances to solve
-target = "Desktop/solveSPP/Data"            # path for a standard config on macOS
+println("\nCollecting...")
+target = "Data"
 fnames = getfname(target)
+
+println("\nThat's all folks !")
