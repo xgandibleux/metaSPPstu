@@ -7,7 +7,7 @@ This implementation is the base of an exercice of the course "metaheuristics".
 
 Fonctionnalités des codes :
 
-Eléments de soutien à l'implémentation en Julia v1.x des devoirs maison à réaliser dans le cadre du cours "métaheuristiques" en master 1 informatique parcours "Optimisation en Recherche Opérationnelle (ORO)". Révision pour l'année académique 2019-2020.
+Eléments de soutien à l'implémentation en Julia v1.x des devoirs maison à réaliser dans le cadre du cours "métaheuristiques" en master 1 informatique". Révision pour l'année académique 2023-2024.
 
 - `loadSPP.jl` : lecture d'une instance de SPP au format OR-library
 - `setSPP.jl` : construction d'un modèle JuMP (v0.20) de SPP
